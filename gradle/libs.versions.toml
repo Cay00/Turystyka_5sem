@@ -12,6 +12,7 @@ lifecycleLivedataKtx = "2.9.4"
 lifecycleViewmodelKtx = "2.9.4"
 navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
+navigationSafeargs = "2.6.0"
 osmdroid = "6.1.18"
 
 [libraries]
@@ -31,4 +32,4 @@ osmdroid = { group = "org.osmdroid", name = "osmdroid-android", version.ref = "o
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationSafeargs" }

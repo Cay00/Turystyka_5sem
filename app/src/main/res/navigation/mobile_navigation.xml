@@ -9,13 +9,17 @@
         android:id="@+id/navigation_home"
         android:name="com.example.turystyka.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_mapPreviewFragment"
+            app:destination="@id/mapPreviewFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.turystyka.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_routes"
+        android:name="com.example.turystyka.ui.routes.RoutesFragment"
+        android:label="@string/title_routes"
+        tools:layout="@layout/fragment_routes" />
 
     <fragment
         android:id="@+id/navigation_notifications"
@@ -28,4 +32,21 @@
         android:name="com.example.turystyka.ui.map.MapFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/mapPreviewFragment"
+        android:name="com.example.turystyka.ui.map.MapPreviewFragment"
+        android:label="Podgląd trasy"
+        tools:layout="@layout/fragment_map_preview">
+        <argument
+            android:name="startAddress"
+            app:argType="string" />
+        <argument
+            android:name="endAddress"
+            app:argType="string" />
+        <argument
+            android:name="isCarRoute"
+            app:argType="boolean" />
+    </fragment>
+
 </navigation>

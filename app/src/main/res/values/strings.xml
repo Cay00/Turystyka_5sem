@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Turystyka</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Trasy</string>
+    <string name="title_routes">Trasy</string>
     <string name="title_notifications">Profil</string>
     <string name="title_map">Mapa</string>
     <!-- TODO: replace with your real Google Maps API key from Google Cloud Console -->
